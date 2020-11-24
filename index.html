@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/37b6b13bc4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>My Albums App</title>
+</head>
+<body>
+    <div class="container mt-4">
+        <div class="col-12">
+        <h1 class="display-4 text-center"><i class="text-primary p-2 fas fa-2x fa-record-vinyl"></i>My <span class="text-primary"> Favourite </span>Albums</h1></div>
+        <form class=" px-lg-3" id="albumForm">
+            <div class="form-group">
+                <label for="title">Album Title</label>
+                <input type="text" id="title" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="artist">Artist</label>
+                <input type="text" id="artist" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="release-date">Release Date</label>
+                <input type="date" id="releaseDate" class="form-control date">
+            </div>
+            <div class="form-group">
+                <label for="link">Album Link</label>
+                <input type="text" id="albumLink" class="form-control">
+            </div>
+            <input type="submit" value="Add Album" class="btn btn-primary btn-block">
+        </form>
+        <div class="container p-2">
+            <input type="text" id="searchBar" class="form-control" placeholder="Buscar Album">
+        </div>
+
+        <table class=" mt-5 table table-striped">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Title</th>
+                    <th>Artist</th>
+                    <th>Release Date</th>
+                    <th>Ref. Code</th>
+                    <th>Link</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="albumList">
+
+            </tbody>
+        </table>
+        
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
